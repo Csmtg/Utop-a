@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UTOPÍA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/utopia-homepage.css" rel="stylesheet">
+
+    <link href="utopia-videos.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="paginaPrincipal.html"><img src="img/portada.jpg" height = "30px" alt=""></a> <!--Logotipo-->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+    					<h2>Simulación en curso.</h2>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+
+        
+        <div class="container-fluid adjustedHeight">
+          <div class="video-container">
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+            <div class="bs-calltoaction bs-calltoaction-default">
+            <div class="row Page1">
+                <div class="col-md-2 cta-contents"><video autoplay loop class="fillWidth">
+              <source src="video/v1.mp4" type="video/mp4" /> Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <div class="poster hidden"> <img src="img/portada.jpg" alt=""> </div></div>
+            
+             <div class="col-xs-6 col-md-6 pull-right" >
+                <!--<a href="#" class="btn btn-lg btn-success btn-block">Iniciar Simulación</a>-->
+                <!-- Botón en HTML (lanza el modal en Bootstrap) -->
+                <a href="#btn-simulacion" role="button" class="btn btn-large btn-danger btn-block" data-toggle="modal">Detener Simulación</a>
+                <!-- Modal / Ventana / Overlay en HTML -->
+                <div id="btn-simulacion" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Detener Simulación</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>El usuario esta en la simulación.</p>
+                                <p class="text-warning"><small>¿Realmente quiere detener la simulación?</small></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                                 <a href="paginaPrincipal.html" class="btn btn-lg btn-danger ">Detener</a>
+                                <!--<button type="button" class="btn btn-success">Iniciar</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+  
+    <!-- /.container -->
+
+    <div class="container">
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                <hr>
+                    <p>Copyright &copy; <a href="http://startbootstrap.com/">Start Bootstrap</a> &amp; Cristian Maizanche</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

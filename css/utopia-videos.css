@@ -1,0 +1,43 @@
+/*Videos*/
+html,
+body,
+div.video-container,
+video
+ {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+video{
+  height: 100%;
+  width: 100%;
+  object-fit : cover;
+}
+
+.video-container {
+  overflow: hidden;
+  background: #000;
+  display: block !important;
+  position: relative;
+}
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+.title-container {
+  z-index: 10;
+  color: #FFF;
+  position: absolute;
+}
+
+.adjustedHeight {
+  height: calc(100% - 77px);
+  width: 100%;
+  padding: 0;
+}

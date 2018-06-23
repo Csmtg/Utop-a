@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UTOPÍA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/utopia-homepage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="paginaPrincipal.html"><img src="img/portada.jpg" height = "30px" alt=""></a> <!--Logotipo-->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+    					<a href="index.html">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+    	<div class="btn-group pull-right">
+  			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu
+  			</button>
+  			<div class="dropdown-menu dropdown-menu-right">
+      			<li><a class="dropdown-item" href="#">Perfil</a></li>
+    		    <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+    		    <li><a class="dropdown-item" href="#">Lista de recuerdos</a></li>
+    		    <br></br>
+    			<br></br>
+    			<br></br>
+    			<br></br>
+    			<li><a class="dropdown-item" href="#">Configuración</a></li>
+    		    <li><a class="dropdown-item" href="#">Ayuda</a></li>
+		    </div>
+		</div>
+    	<ul class="nav nav-pills nav-justified">
+  			<li class="active"><a href="paginaPrincipal.html">Inicio</a></li>
+ 		 	<li><a href="cuenta.html">Perfil</a></li>
+  			<li><a href="#">Mensajes</a></li>
+		</ul>
+		<br></br>
+    	<div class="row">
+    		<div class="col-sm-4 col-lg-4 col-md-4">
+    			<div class="thumbnail">
+    				<img src="img/imgP.jpg" alt="">
+    				<div class="caption">
+    					<h4 class="pull-right">?? años</h4>
+                        <h4><p>Nombre: ___________ _________</p></h4>
+                        <p>DNI: __________</p>
+                        <p>Correo: __________@________.es</p>
+    				</div>
+    				
+    			</div>
+    		</div>	
+    		<div class="col-sm-4 col-lg-4 col-md-4 pull-right">
+    			<div class="thumbnail">
+    				<img src="img/imgP.jpg" alt="">
+    				<div class="caption">
+    					<h4 class="pull-right">?? años</h4>
+                        <h4><p>Nombre: ________ __________</p></h4>
+                        <p>DNI: ___________</p>
+                        <p>Correo: ________@_______.es</p>
+    				</div>
+    				
+    			</div>
+    		</div>	
+    	</div>
+    		<div class="col-xs-6 col-sm-6" >
+    		    <a href="#" class="btn btn-lg btn-primary btn-block">Temporizador</a>
+    		</div>
+    		<div class="col-xs-6 col-sm-6" >
+    		    <a href="#" class="btn btn-lg btn-primary">Estado</a>
+    		</div>
+    		<br></br>
+    		<br></br>
+    		<div class="col-xs-6 col-sm-6" >
+    		    <a href="#" class="btn btn-lg btn-primary btn-block">lista de recuerdos</a>
+    		</div>
+    		<br></br>
+    		<br></br>
+    		<div class="col-xs-6 col-sm-6" >
+    		    <a href="#" class="btn btn-lg btn-primary btn-block">Último Recuerdo</a>
+    		</div>
+    		<br></br>
+    		<br></br>
+    		<div class="col-xs-6 col-sm-6 pull-right" >
+    		    <!--<a href="#" class="btn btn-lg btn-success btn-block">Iniciar Simulación</a>-->
+				<!-- Botón en HTML (lanza el modal en Bootstrap) -->
+				<a href="#btn-simulacion" role="button" class="btn btn-large btn-success btn-block" data-toggle="modal">Iniciar simulacion</a>
+				<!-- Modal / Ventana / Overlay en HTML -->
+				<div id="btn-simulacion" class="modal fade">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				                <h4 class="modal-title">Iniciar simulación</h4>
+				            </div>
+				            <div class="modal-body">
+				                <p>Debes colocarte el dispositivo en la cabeza para iniciar la simulación.</p>
+				                <p class="text-warning"><small>Si no lo haces, no aparecera nada en pantalla.</small></p>
+				            </div>
+				            <div class="modal-footer">
+				                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+				                 <a href="simulacion.html" class="btn btn-lg btn-success ">Iniciar</a>
+				                <!--<button type="button" class="btn btn-success">Iniciar</button>-->
+				            </div>
+				        </div>
+				    </div>
+				</div>
+    		</div>
+    </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                <hr>
+                    <p>Copyright &copy; <a href="http://startbootstrap.com/">Start Bootstrap</a> &amp; Cristian Maizanche</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
