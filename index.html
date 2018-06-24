@@ -10,6 +10,16 @@
 
     <title>UTOPÍA</title>
 
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,10 +33,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
      
-</head>
+</head >
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -63,15 +72,38 @@
     </nav>
 
     <!-- Page Content -->
+
     <div class="container">
 
         <div class="row">
+            <div class="col-md-3">
+                <a href="#btn-info" role="button" class="btn btn-large btn-success btn-block" data-toggle="modal">Pulsa aquí</a>
+                <div id="btn-info" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Ayuda</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>EL sistema consiste en que mediante un dispositivo se transportaran todos nuestros recuerdos al ordenador creando un avatar del usuario
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="col-md-9">
 
                 <div class="row carousel-holder">
 
                     <div class="col-md-12">
+
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -97,10 +129,9 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="row">
+
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
@@ -167,6 +198,7 @@
                             </div>
                         </div>
                     </div>
+
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
@@ -248,3 +280,4 @@
 </body>
 
 </html>
+
